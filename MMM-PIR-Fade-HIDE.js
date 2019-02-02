@@ -10,7 +10,8 @@ Module.register("MMM-PIR-Fade-HIDE",{
         defaults: {
                 fadeInTime: 1000,
 		fadeOutTime: 1000,
-		
+		delay: 5000,
+
 	},
 
 	getScripts: function() {
@@ -24,16 +25,19 @@ Module.register("MMM-PIR-Fade-HIDE",{
         notificationReceived: function(notification, payload, sender) {
                 if (notification === "USER_PRESENCE") {
 			if (payload){
-				$('#BLACK').fadeOut(this.config.fadeOutTime);
-				
+				setTimeout( function (){
+					$('#BLACK').fadeOut(this.config.fadeOutTime);
+				}, this.config.delay);
+
+
 			}else{
 				$('#BLACK').fadeIn(this.config.fadeInTime);
 			}
-			
+
                 }
 	},
-	
-	
+
+
 	getDom: function() {
 		var wrapper = document.createElement("div");
 		wrapper.id = "BLACK";
