@@ -1,6 +1,6 @@
 # MMM-PIR-Fade-HIDE
 
-This is a Modul for the [MagicMirror<sup>2</sup>]. It is a modification of this Modul (https://github.com/MichMich/MagicMirror) [mm-pir-hide-all](https://github.com/phrazelle/mm-pir-hide-all).
+This is a Modul for the [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror). It is a modification of this Modul [mm-pir-hide-all](https://github.com/phrazelle/mm-pir-hide-all).
 This modul adds a black Overlay with fading effect and do not deactivate the HDMI or graphical output!
 
 ## Dependencies
